@@ -5,8 +5,6 @@
 		xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = function() {
 			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-				alert("response text: "+xmlhttp.responseText+"\n"
-				      +"response XML: "+xmlhttp.responseXML);
 				if (xmlhttp.responseText!="") {
 					 document.getElementById("targetDiv").innerHTML=xmlhttp.responseText;
 				}		

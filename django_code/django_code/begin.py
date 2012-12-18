@@ -1,8 +1,8 @@
 from bs4 import BeautifulSoup
 from django.http import HttpResponse
-import httplib, sys, urllib2
+import  urllib2
 import re
-
+import crossdomain_middleware
 
 def getFullHTML(url):
     htmlBody = ""
@@ -30,10 +30,10 @@ def soupify(html_doc):
     for showPostLink in soup.find_all(href=re.compile('showpost.*this')):
         #if this post is 4 levels under a "font", it's a thread title so put a space before it
         if showPostLink.parent.parent.parent.parent.name=="font":
-           response += "\n"
+           response += "<br>"
 
         #print the post title
-        response += "\n"+"##"+showPostLink.string
+        response += "<br>"+"##"+showPostLink.string
         #postBody = getPostFullContents("http://www.ndnation.com/boards/"+showPostLink['href'])
 
 
@@ -48,8 +48,16 @@ def soupify(html_doc):
     return response
 
 def getPosts(request):
+    # add cross-site headers to request
+    #request = middleware.XsSharing.process_request(request=request)
+
     response_string=soupify(getFullHTML("http://www.ndnation.com/boards/index.php?football"))
-    return HttpResponse(response_string,mimetype='text/plain',status=200)
+    myResponse = HttpResponse(response_string,mimetype='text/plain',status=200)
+
+    # add cross-site headers to response
+    myResponse = crossdomain_middleware.process_response(request,myResponse)
+
+    return myResponse
     #return ""
 
 #soupify(getFullHTML("http://www.ndnation.com/boards/index.php?football"))
