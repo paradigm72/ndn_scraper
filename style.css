@@ -1,0 +1,29 @@
+body {
+	background-color: #443f3f;
+	color: #ebebeb;
+	font-family: Helvetica Neue, Arial;
+}
+
+h1 {
+	color: #66b78c;
+	margin: 0;
+}
+
+input {
+	margin: 0px 0px 10px 0px;
+}
+
+.threadsArea {
+	background-color: #4c4c4c;
+	border: 2px solid #5f5d5d;	
+	padding: 0 8 8 8;
+	border-radius: 5px	
+}
+
+.thread {
+	border: 2px solid #575e69;
+	background-color: #444959;
+	margin: 10 0 0 0;
+	padding: 8 8 8 8;
+	border-radius: 5px;
+}

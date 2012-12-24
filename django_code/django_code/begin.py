@@ -26,25 +26,34 @@ def getPostFullContents(href):
 def soupify(html_doc):
     soup = BeautifulSoup(html_doc)
     response = ""
+    subsequentThread = False
 
     for showPostLink in soup.find_all(href=re.compile('showpost.*this')):
-        #if this post is 4 levels under a "font", it's a thread title so put a space before it
+        #if this post is 4 levels under a "font", it's a thread title so start a new thread div
         if showPostLink.parent.parent.parent.parent.name=="font":
-           response += "<br>"
+           if subsequentThread==True:
+                response += "</div>"
+           else:
+                subsequentThread=True
+           response += "<div class=""thread"">"
+        else:
+            response += "<br>"   #new line only if this *isn't* the first post in the thread
 
         #print the post title
-        response += "<br>"+"##"+showPostLink.string
+        response += showPostLink.string
+
+        ### BELOW CODE IS TO GET THE FULL POST TEXT - VERY SLOW AND EXPENSIVE
         #postBody = getPostFullContents("http://www.ndnation.com/boards/"+showPostLink['href'])
-
-
         #weird hack to get string index 2, not sure of the right syntax
         #if not "*" in showPostLink.string:
         #    i = 1
         #    for string in postBody.strings:
         #        if i==2:
         #            if len(string) > 0:
-        #                print string
+        #                response += "<br>"+string
         #        i += 1
+
+    response += "</div>"
     return response
 
 def getPosts(request):

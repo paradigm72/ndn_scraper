@@ -1,20 +1,6 @@
 <head>
-<script type="text/javascript">
-	function doAjax()
-	{
-		xmlhttp = new XMLHttpRequest();
-		xmlhttp.onreadystatechange = function() {
-			if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-				if (xmlhttp.responseText!="") {
-					 document.getElementById("targetDiv").innerHTML=xmlhttp.responseText;
-				}		
-			}
-
-		}
-		xmlhttp.open("GET","http://127.0.0.1:8000/~paradigm72/HTMLScraper/getPosts",true);
-		xmlhttp.send();
-	}
-</script>
+<script type="text/javascript" src="getData.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
 <title>NDNation Web Scraper in Python</title>
 </head>
 
@@ -22,5 +8,5 @@
 <h1>NDNation Web Scraper in Python</h1>
 <input type="button" value="Load Data" onclick="javascript:doAjax()">
 <br>
-<div id="targetDiv">initial data...</div>
+<div id="targetDiv" class="threadsArea">initial data...</div>
 </body>
