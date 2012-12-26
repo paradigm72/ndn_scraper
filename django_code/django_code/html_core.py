@@ -23,13 +23,14 @@ def getPostFullContents(href):
 def addPostFullContents(responseSoFar,showPostLink):
     postBody = getPostFullContents("http://www.ndnation.com/boards/"+showPostLink['href'])
     #weird hack to get string index 2, not sure of the right syntax
-    if not "*" in showPostLink.string:
-        i = 1
-        for string in postBody.strings:
-            if i==2:
-                if len(string) > 0:
-                    responseSoFar += "<br>;nbsp;nbsp"+string
-            i += 1
+    i = 1
+    responseSoFar += "<div class=""postBody"">"  #start a new div to style the post contents
+    for string in postBody.strings:
+        if i==2:
+            if len(string) > 0:
+                responseSoFar += string
+        i += 1
+    responseSoFar += "</div>"
     return responseSoFar
 
 def soupify(html_doc):
@@ -52,10 +53,14 @@ def soupify(html_doc):
         #print the post title
         response += showPostLink.string
 
-        ### BELOW CODE IS TO GET THE FULL POST TEXT - VERY SLOW AND EXPENSIVE
-        if postCounter <= 10:
-            addPostFullContents(response,showPostLink)
+        ### BELOW CODE IS TO GET THE FULL POST TEXT - VERY SLOW AND EXPENSIVE, SO LIMITING TO 10 FOR NOW
+        if not "*" in showPostLink.string:  #if this post has any content,
+            if postCounter <= 10:
+                response = addPostFullContents(response,showPostLink)
             postCounter += 1
 
     response += "</div>"
     return response
+
+
+#print soupify(getFullHTML("http://www.ndnation.com/boards/index.php?football"))

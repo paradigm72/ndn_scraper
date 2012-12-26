@@ -27,3 +27,7 @@ input {
 	padding: 8 8 8 8;
 	border-radius: 5px;
 }
+
+.postBody {
+	color:#979797;
+}
