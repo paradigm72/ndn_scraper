@@ -57,7 +57,10 @@ def soupify(html_doc):
         if not "*" in showPostLink.string:  #if this post has any content,
             if postCounter <= 10:
                 response = addPostFullContents(response,showPostLink)
+            else:
+                response += "<span class=""futureURL"" id="""+showPostLink['href']+"""></span>"""
             postCounter += 1
+
 
     response += "</div>"
     return response
