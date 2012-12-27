@@ -14,14 +14,14 @@ def getFullHTML(url):
     return htmlBody
 
 
-def getPostFullContents(href):
+def getOnePostFullContents(href):
     html_doc = getFullHTML(href)
     soup = BeautifulSoup(html_doc)
     postBody = soup.find(id='PostBody')
     return postBody
 
-def addPostFullContents(responseSoFar,showPostLink):
-    postBody = getPostFullContents("http://www.ndnation.com/boards/"+showPostLink['href'])
+def addOnePostFullContentsToResponse(responseSoFar,showPostLink):
+    postBody = getOnePostFullContents("http://www.ndnation.com/boards/"+showPostLink['href'])
     #weird hack to get string index 2, not sure of the right syntax
     i = 1
     responseSoFar += "<div class=""postBody"">"  #start a new div to style the post contents
@@ -33,7 +33,8 @@ def addPostFullContents(responseSoFar,showPostLink):
     responseSoFar += "</div>"
     return responseSoFar
 
-def soupify(html_doc):
+
+def getAllPosts(html_doc):
     soup = BeautifulSoup(html_doc)
     response = ""
     postCounter = 0
@@ -56,7 +57,7 @@ def soupify(html_doc):
         ### BELOW CODE IS TO GET THE FULL POST TEXT - VERY SLOW AND EXPENSIVE, SO LIMITING TO 10 FOR NOW
         if not "*" in showPostLink.string:  #if this post has any content,
             if postCounter <= 10:
-                response = addPostFullContents(response,showPostLink)
+                response = addOnePostFullContentsToResponse(response,showPostLink)
             else:
                 response += "<span class=""futureURL"" id="""+showPostLink['href']+"""></span>"""
             postCounter += 1

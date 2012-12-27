@@ -1,12 +1,14 @@
 from django.conf.urls import patterns
 from begin import getPosts
+from begin import getIndividualPost
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
 # admin.autodiscover()
 
 urlpatterns = patterns('',
-        (r'^.*getPosts', getPosts)
+        (r'^.*getPosts', getPosts),
+        (r'^.*getPostContents/(.*)',getIndividualPost)  #anything after "getPostContents/" is the href parameter
     # Examples:
     # url(r'^$', 'django_code.views.home', name='home'),
     # url(r'^django_code/', include('django_code.foo.urls')),
