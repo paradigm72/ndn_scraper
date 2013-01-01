@@ -1,5 +1,5 @@
 from bs4 import BeautifulSoup
-import urllib2
+import urllib2,urllib
 import re
 
 def getFullHTML(url):
@@ -14,14 +14,14 @@ def getFullHTML(url):
     return htmlBody
 
 
-def getOnePostFullContents(href):
-    html_doc = getFullHTML(href)
+def getOnePostFullContents(local_href):
+    html_doc = getFullHTML("http://www.ndnation.com/boards/"+local_href)
     soup = BeautifulSoup(html_doc)
     postBody = soup.find(id='PostBody')
     return postBody
 
 def addOnePostFullContentsToResponse(responseSoFar,showPostLink):
-    postBody = getOnePostFullContents("http://www.ndnation.com/boards/"+showPostLink['href'])
+    postBody = getOnePostFullContents(showPostLink['href'])
     #weird hack to get string index 2, not sure of the right syntax
     i = 1
     responseSoFar += "<div class=""postBody"">"  #start a new div to style the post contents
@@ -59,7 +59,7 @@ def getAllPosts(html_doc):
             if postCounter <= 10:
                 response = addOnePostFullContentsToResponse(response,showPostLink)
             else:
-                response += "<span class=""futureURL"" id="""+showPostLink['href']+"""></span>"""
+                response += "<span class=""futureURL"" id="""+urllib.quote_plus(showPostLink['href'])+"""></span>"""
             postCounter += 1
 
 

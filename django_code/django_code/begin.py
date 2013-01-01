@@ -1,6 +1,6 @@
 import html_core
 from django.http import HttpResponse
-import crossdomain_middleware
+import crossdomain_response
 
 
 def getPosts(request):
@@ -11,7 +11,7 @@ def getPosts(request):
     myResponseObj = HttpResponse(response_string,mimetype='text/plain',status=200)
 
     # add cross-site headers to response
-    myResponseObj = crossdomain_middleware.process_response(request,myResponseObj)
+    myResponseObj = crossdomain_response.process_response(request,myResponseObj)
     return myResponseObj
 
 
@@ -21,7 +21,7 @@ def getIndividualPost(request,href):
     myResponseObj = HttpResponse(response_string,mimetype='text/plain',status=200)
 
     # add cross-site headers to response
-    myResponseObj = crossdomain_middleware.process_response(request,myResponseObj)
+    myResponseObj = crossdomain_response.process_response(request,myResponseObj)
     return myResponseObj
 
 
