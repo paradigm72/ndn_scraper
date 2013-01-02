@@ -18,19 +18,19 @@ def getOnePostFullContents(local_href):
     html_doc = getFullHTML("http://www.ndnation.com/boards/"+local_href)
     soup = BeautifulSoup(html_doc)
     postBody = soup.find(id='PostBody')
-    return postBody
-
-def addOnePostFullContentsToResponse(responseSoFar,showPostLink):
-    postBody = getOnePostFullContents(showPostLink['href'])
     #weird hack to get string index 2, not sure of the right syntax
     i = 1
-    responseSoFar += "<div class=""postBody"">"  #start a new div to style the post contents
+    postBodySanitized = "<div class=""postBody"">"  #start a new div to style the post contents
     for string in postBody.strings:
         if i==2:
             if len(string) > 0:
-                responseSoFar += string
+                postBodySanitized += string
         i += 1
-    responseSoFar += "</div>"
+    postBodySanitized += "</div>"
+    return postBodySanitized
+
+def addOnePostFullContentsToResponse(responseSoFar,showPostLink):
+    responseSoFar += getOnePostFullContents(showPostLink['href'])
     return responseSoFar
 
 
@@ -54,9 +54,11 @@ def getAllPosts(html_doc):
         #print the post title
         response += showPostLink.string
 
-        ### BELOW CODE IS TO GET THE FULL POST TEXT - VERY SLOW AND EXPENSIVE, SO LIMITING TO 10 FOR NOW
+        ### BELOW CODE IS TO GET THE FULL POST TEXT AS PART OF THE INITIAL REQUEST
+        ### - VERY SLOW AND EXPENSIVE, SO LIMITING TO 0 (NOT IMPLEMENTED) FOR NOW
+        ### - HANDLED WITH FUTURE INDIVIDUAL REQUESTS INSTEAD
         if not "*" in showPostLink.string:  #if this post has any content,
-            if postCounter <= 10:
+            if postCounter < 0:
                 response = addOnePostFullContentsToResponse(response,showPostLink)
             else:
                 response += "<span class=""futureURL"" id="""+urllib.quote_plus(showPostLink['href'])+"""></span>"""
@@ -67,4 +69,5 @@ def getAllPosts(html_doc):
     return response
 
 
-#print soupify(getFullHTML("http://www.ndnation.com/boards/index.php?football"))
+##print soupify(getFullHTML("http://www.ndnation.com/boards/index.php?football"))
+print getOnePostFullContents("showpost.php?b=football;pid=421237;d=this")

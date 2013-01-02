@@ -1,4 +1,10 @@
+//global flag to stop execution the next time we get to a readystatechange
+var stopRequestsOnNextReturn;
+
 function getInitialPostsContent() {
+	//clear stop flag, if it was set
+	stopRequestsOnNextReturn = false;
+	
 	var xmlhttp;
 	xmlhttp = new XMLHttpRequest();
 	xmlhttp.onreadystatechange = function() {
@@ -42,10 +48,18 @@ function getNextPostContent() {
 
 function constructNextPostContent(rawText,elementID) {
 	//find the element, replace its innerHTML
-	$(".futureURL").innerHTML = rawText;
-	$(".futureURL").className = "usedURL";
-	//squash its ID/class
+	$(".futureURL").first().html(rawText);
 	
-	//setup timer to the next iteration
-	setTimeout(getNextPostContent(), 10000);
+	//squash its class marker
+	$(".futureURL").first().addClass("usedURL");
+	$(".futureURL").first().removeClass("futureURL");
+	
+	//set up timer to the next iteration
+	if (!stopRequestsOnNextReturn) {
+		setTimeout(getNextPostContent(), 10000);	
+	}	
+}
+
+function stopRequests() {
+	stopRequestsOnNextReturn = true;
 }
