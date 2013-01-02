@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="405d3849-922a-42fd-a9fa-840863524328" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_code/django_code/html_core.py" afterPath="$PROJECT_DIR$/django_code/django_code/html_core.py" />
-    </list>
+    <list default="true" id="405d3849-922a-42fd-a9fa-840863524328" name="Default" comment="" />
     <ignored path="HTMLScraper.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
