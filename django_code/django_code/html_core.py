@@ -20,13 +20,13 @@ def getOnePostFullContents(local_href):
     postBody = soup.find(id='PostBody')
     #weird hack to get string index 2, not sure of the right syntax
     i = 1
-    postBodySanitized = "<div class=""postBody"">"  #start a new div to style the post contents
+    postBodySanitized = "<br><span class=""postBody"">"  #start a new span to style the post contents
     for string in postBody.strings:
         if i==2:
             if len(string) > 0:
                 postBodySanitized += string
         i += 1
-    postBodySanitized += "</div>"
+    postBodySanitized += "</span>"
     return postBodySanitized
 
 def addOnePostFullContentsToResponse(responseSoFar,showPostLink):
@@ -41,7 +41,7 @@ def getAllPosts(html_doc):
     subsequentThread = False
 
     for showPostLink in soup.find_all(href=re.compile('showpost.*this')):
-        #if this post is 4 levels under a "font", it's a thread title so start a new thread div
+        #if this post is 4 levels under a "font", it's the first in a thread so start a new thread div
         if showPostLink.parent.parent.parent.parent.name=="font":
             if subsequentThread==True:
                 response += "</div>"
@@ -54,15 +54,9 @@ def getAllPosts(html_doc):
         #print the post title
         response += showPostLink.string
 
-        ### BELOW CODE IS TO GET THE FULL POST TEXT AS PART OF THE INITIAL REQUEST
-        ### - VERY SLOW AND EXPENSIVE, SO LIMITING TO 0 (NOT IMPLEMENTED) FOR NOW
-        ### - HANDLED WITH FUTURE INDIVIDUAL REQUESTS INSTEAD
-        if not "*" in showPostLink.string:  #if this post has any content,
-            if postCounter < 0:
-                response = addOnePostFullContentsToResponse(response,showPostLink)
-            else:
-                response += "<span class=""futureURL"" id="""+urllib.quote_plus(showPostLink['href'])+"""></span>"""
-            postCounter += 1
+        #if this post has any content, tag it for future retrieval (separate AJAX request)
+        if not "*" in showPostLink.string:
+           response += "<span class=""futureURL"" id="""+urllib.quote_plus(showPostLink['href'])+"""></span>"""
 
 
     response += "</div>"
@@ -70,4 +64,4 @@ def getAllPosts(html_doc):
 
 
 ##print soupify(getFullHTML("http://www.ndnation.com/boards/index.php?football"))
-print getOnePostFullContents("showpost.php?b=football;pid=421237;d=this")
+##print getOnePostFullContents("showpost.php?b=football;pid=421237;d=this")
