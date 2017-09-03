@@ -41,8 +41,10 @@ def getAllPosts(html_doc):
     subsequentThread = False
 
     for showPostLink in soup.find_all(href=re.compile('showpost.*this')):
-        #if this post is 4 levels under a "font", it's the first in a thread so start a new thread div
-        if showPostLink.parent.parent.parent.parent.name=="font":
+        #if this post is part of a ThreadPrime span, it's the first in a thread so start a new thread div
+        print showPostLink.parent.get("class")
+        if showPostLink.parent.get("class")=="ThreadPrime":
+            print "condition matched!"
             if subsequentThread==True:
                 response += "</div>"
             else:
