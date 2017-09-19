@@ -43,7 +43,7 @@ def getAllPosts(html_doc):
     for showPostLink in soup.find_all(href=re.compile('showpost.*this')):
         #if this post is part of a ThreadPrime span, it's the first in a thread so start a new thread div
         if showPostLink.parent.get("class")[0]==unicode("ThreadPrime"):
-            print "condition matched!"
+            # print "condition matched!"
             if subsequentThread==True:
                 response += "</div>"
             else:
