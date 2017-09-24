@@ -26,6 +26,7 @@ def getOnePostFullContents(local_href):
             if len(string) > 0:
                 postBodySanitized += string
         i += 1
+        print string['href']
     postBodySanitized += "</span>"
     return postBodySanitized
 

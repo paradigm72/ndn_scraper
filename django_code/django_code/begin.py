@@ -17,12 +17,16 @@ def getPosts(request):
 
 
 def getIndividualPost(request,href):
-    response_string = html_core.getOnePostFullContents(href)
-    myResponseObj = HttpResponse(response_string,mimetype='text/plain',status=200)
-
-    # add cross-site headers to response
-    myResponseObj = crossdomain_response.process_response(request,myResponseObj)
-    return myResponseObj
+    try:
+        response_string = html_core.getOnePostFullContents(href)
+    except:
+        response_string = ""
+        print "Error in getOnePostFullContents"
+    finally:
+        myResponseObj = HttpResponse(response_string,mimetype='text/plain',status=200)
+        # add cross-site headers to response
+        myResponseObj = crossdomain_response.process_response(request,myResponseObj)
+        return myResponseObj
 
 
 
