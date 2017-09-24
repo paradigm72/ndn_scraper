@@ -2,7 +2,7 @@ from bs4 import BeautifulSoup
 import urllib2,urllib
 import re
 
-def getFullHTML(url):
+def _getFullHTML(url):
     htmlBody = ""
     req = urllib2.Request(url)
     fd = urllib2.urlopen(req)
@@ -14,8 +14,8 @@ def getFullHTML(url):
     return htmlBody
 
 
-def getOnePostFullContents(local_href):
-    html_doc = getFullHTML("http://www.ndnation.com/boards/"+local_href)
+def _getOnePostFullContents(local_href):
+    html_doc = _getFullHTML("http://www.ndnation.com/boards/"+local_href)
     soup = BeautifulSoup(html_doc)
     postBody = soup.find(id='PostBody')
     #weird hack to get string index 2, not sure of the right syntax
@@ -30,12 +30,12 @@ def getOnePostFullContents(local_href):
     postBodySanitized += "</span>"
     return postBodySanitized
 
-def addOnePostFullContentsToResponse(responseSoFar,showPostLink):
-    responseSoFar += getOnePostFullContents(showPostLink['href'])
+def _addOnePostFullContentsToResponse(responseSoFar,showPostLink):
+    responseSoFar += _getOnePostFullContents(showPostLink['href'])
     return responseSoFar
 
 
-def getAllPosts(html_doc):
+def _getAllPosts(html_doc):
     soup = BeautifulSoup(html_doc)
     response = ""
     postCounter = 0

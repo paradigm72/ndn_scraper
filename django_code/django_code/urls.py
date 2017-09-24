@@ -1,6 +1,6 @@
 from django.conf.urls import patterns
-from begin import getPosts
-from begin import getIndividualPost
+from NDNScraper_interface import getPosts
+from NDNScraper_interface import getIndividualPost
 
 # Uncomment the next two lines to enable the admin:
 # from django.contrib import admin
