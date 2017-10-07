@@ -7,12 +7,16 @@ def getPosts(request):
     # add cross-site headers to request - not currently implemented
     # response_string = crossdomain_response.process_request(request=request)
 
-    response_string = NDNScraper_private._getAllPosts(html_core.getFullHTML("http://www.ndnation.com/boards/index.php?football"))
-    myResponseObj = HttpResponse(response_string,mimetype='text/plain',status=200)
-
-    # add cross-site headers to response
-    myResponseObj = crossdomain_response.process_response(request,myResponseObj)
-    return myResponseObj
+    try:
+        response_string = NDNScraper_private._getAllPosts(html_core.getFullHTML("http://www.ndnation.com/boards/index.php?football"))
+        myResponseObj = HttpResponse(response_string,mimetype='text/plain',status=200)
+    except:
+        response_string = ""
+        print "Error in getAllPosts"
+    finally:
+        # add cross-site headers to response
+        myResponseObj = crossdomain_response.process_response(request,myResponseObj)
+        return myResponseObj
 
 
 
