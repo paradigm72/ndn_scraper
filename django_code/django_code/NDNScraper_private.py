@@ -36,6 +36,8 @@ def _addOnePostFullContentsToResponse(responseSoFar,showPostLink):
 
 
 def _getAllPosts(html_doc):
+    print "got into _getAllPosts"
+
     soup = BeautifulSoup(html_doc)
     response = ""
     postCounter = 0

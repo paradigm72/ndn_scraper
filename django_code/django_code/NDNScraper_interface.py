@@ -6,6 +6,7 @@ import NDNScraper_private
 def getPosts(request):
     # add cross-site headers to request - not currently implemented
     # response_string = crossdomain_response.process_request(request=request)
+    print "got into getPosts()"
 
     try:
         response_string = NDNScraper_private._getAllPosts(html_core.getFullHTML("http://www.ndnation.com/boards/index.php?football"))
