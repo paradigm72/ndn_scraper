@@ -7,16 +7,16 @@ function getInitialPostsContent() {
 	
 	var xmlhttp;
 	xmlhttp = new XMLHttpRequest();
-	xmlhttp.onreadystatechange = function() {
-		if (xmlhttp.readyState==4 && xmlhttp.status==200) {
-			if (xmlhttp.responseText!=="") {
-				 constructInitialPostsContent(xmlhttp.responseText);
-			}		
-		}
-
-	};
+	//xmlhttp.onreadystatechange = function() {
+	//	if (xmlhttp.readyState==4 && xmlhttp.status==200) {
+	//		if (xmlhttp.responseText!=="") {
+	//			 constructInitialPostsContent(xmlhttp.responseText);
+	//		}
+	//	}
+    //};
 	xmlhttp.open("GET","http://127.0.0.1:8000/~paradigm72/HTMLScraper/getPosts",true);
 	xmlhttp.send();
+    alert(xmlhttp.errorCode);
 }
 
 function constructInitialPostsContent(rawText) {

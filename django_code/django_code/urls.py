@@ -6,6 +6,8 @@ from NDNScraper_interface import getIndividualPost
 # from django.contrib import admin
 # admin.autodiscover()
 
+print "loaded urls.py"
+
 urlpatterns = patterns('',
         (r'^.*getPosts', getPosts),
         (r'^.*getPostContents/(.*)',getIndividualPost)  #anything after "getPostContents/" is the href parameter
