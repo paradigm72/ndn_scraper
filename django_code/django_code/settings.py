@@ -1,6 +1,6 @@
 # Django settings for django_code project.
 
-DEBUG = True
+DEBUG = False
 TEMPLATE_DEBUG = DEBUG
 
 ADMINS = (
@@ -98,6 +98,11 @@ MIDDLEWARE_CLASSES = (
 )
 
 ROOT_URLCONF = 'django_code.urls'
+
+ALLOWED_HOSTS = [
+    '127.0.0.1',  # Allow domain and subdomains
+    '.example.com.',  # Also allow FQDN and subdomains
+]
 
 # Python dotted path to the WSGI application used by Django's runserver.
 WSGI_APPLICATION = 'django_code.wsgi.application'

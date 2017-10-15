@@ -1,4 +1,3 @@
-import html_core
 from django.http import HttpResponse
 import crossdomain_response
 import NDNScraper_private
