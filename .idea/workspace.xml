@@ -2,10 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="405d3849-922a-42fd-a9fa-840863524328" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py" afterPath="$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py" afterPath="$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getData.js" afterPath="$PROJECT_DIR$/getData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HTMLScraper.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -16,7 +13,7 @@
     <file path="/style.css" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1504407969581" ignored="false" />
     <file path="/index.html" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1505788140439" ignored="false" />
     <file path="/urls.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508031652526" ignored="false" />
-    <file path="/NDNScraper_private.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1507518768295" ignored="false" />
+    <file path="/NDNScraper_private.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508119940759" ignored="false" />
     <file path="/NDNScraper_interface.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508117790466" ignored="false" />
     <file path="/getData.js" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1507687059495" ignored="false" />
     <file path="/settings.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508117376481" ignored="false" />
@@ -126,7 +123,7 @@
       <file leaf-file-name="NDNScraper_private.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="5" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.59177214">
+            <state line="26" column="8" selection-start="808" selection-end="808" vertical-scroll-proportion="0.38181818">
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -217,8 +214,8 @@
         <option value="$PROJECT_DIR$/django_code/django_code/urls.py" />
         <option value="$PROJECT_DIR$/getData.js" />
         <option value="$PROJECT_DIR$/django_code/django_code/settings.py" />
-        <option value="$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py" />
         <option value="$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py" />
+        <option value="$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py" />
       </list>
     </option>
   </component>
@@ -226,7 +223,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="58" />
     <option name="y" value="23" />
-    <option name="width" value="1561" />
+    <option name="width" value="1232" />
     <option name="height" value="1119" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -540,14 +537,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="23" width="1561" height="1119" extended-state="0" />
+    <frame x="58" y="23" width="1232" height="1119" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4049196" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27373213" sideWeight="0.7857858" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34822166" sideWeight="0.7857858" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32421562" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299923" sideWeight="0.49769586" order="7" side_tool="true" content_ui="tabs" />
@@ -654,13 +651,6 @@
         <state line="2" column="45" selection-start="89" selection-end="89" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="54" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="13" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
@@ -700,13 +690,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/settings.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="31" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
@@ -723,9 +706,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/getData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="41" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="54" selection-start="291" selection-end="291" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="5" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.59177214">
+        <state line="26" column="8" selection-start="808" selection-end="808" vertical-scroll-proportion="0.38181818">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

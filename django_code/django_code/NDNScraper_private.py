@@ -21,12 +21,15 @@ def _getOnePostFullContents(local_href):
     #weird hack to get string index 2, not sure of the right syntax
     i = 1
     postBodySanitized = "<br><span class=""postBody"">"  #start a new span to style the post contents
-    for string in postBody.strings:
+    # print postBody.strings.count
+    for string in postBody.find_all(text=True, recursive=False):
+        # print unicode(string)
         if i==2:
-            if len(string) > 0:
-                postBodySanitized += string
+            if len(unicode(string)) > 0:
+                postBodySanitized += unicode(string)
         i += 1
-        print string['href']
+        # print string['href']
+    # print postBody.contents
     postBodySanitized += "</span>"
     return postBodySanitized
 
