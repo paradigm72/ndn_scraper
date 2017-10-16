@@ -40,7 +40,7 @@ def _getAllPosts(html_doc):
 
     soup = BeautifulSoup(html_doc)
     response = ""
-    postCounter = 0
+    # postCounter = 0
     subsequentThread = False
 
     for showPostLink in soup.find_all(href=re.compile('showpost.*this')):

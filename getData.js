@@ -14,7 +14,7 @@ function getInitialPostsContent() {
 			}
 		}
     };
-	xmlhttp.open("GET","http://127.0.0.1:8000/~paradigm72/HTMLScraper/getPosts/",true);
+	xmlhttp.open("GET","http://127.0.0.1:8000/~paradigm72/HTMLScraper/getPosts",true);
 	xmlhttp.send();
 }
 

@@ -8,7 +8,7 @@ def getPosts(request):
     print "got into getPosts()"
 
     try:
-        response_string = NDNScraper_private._getAllPosts(html_core.getFullHTML("http://www.ndnation.com/boards/index.php?football"))
+        response_string = NDNScraper_private._getAllPosts(NDNScraper_private._getFullHTML("http://www.ndnation.com/boards/index.php?football"))
         myResponseObj = HttpResponse(response_string,mimetype='text/plain',status=200)
     except:
         response_string = ""

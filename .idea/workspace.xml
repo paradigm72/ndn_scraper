@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="405d3849-922a-42fd-a9fa-840863524328" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py" afterPath="$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py" afterPath="$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/getData.js" afterPath="$PROJECT_DIR$/getData.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_code/django_code/settings.py" afterPath="$PROJECT_DIR$/django_code/django_code/settings.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_code/django_code/urls.py" afterPath="$PROJECT_DIR$/django_code/django_code/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HTMLScraper.iws" />
@@ -18,9 +17,9 @@
     <file path="/index.html" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1505788140439" ignored="false" />
     <file path="/urls.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508031652526" ignored="false" />
     <file path="/NDNScraper_private.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1507518768295" ignored="false" />
-    <file path="/NDNScraper_interface.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508031431634" ignored="false" />
+    <file path="/NDNScraper_interface.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508117790466" ignored="false" />
     <file path="/getData.js" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1507687059495" ignored="false" />
-    <file path="/settings.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508031989658" ignored="false" />
+    <file path="/settings.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508117376481" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -87,7 +86,7 @@
       <file leaf-file-name="getData.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/getData.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="43" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
+            <state line="4" column="41" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -105,7 +104,7 @@
       <file leaf-file-name="NDNScraper_interface.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="23" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+            <state line="14" column="36" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#0#36#0" expanded="true" />
               </folding>
@@ -127,7 +126,7 @@
       <file leaf-file-name="NDNScraper_private.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="65" column="86" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.8027426">
+            <state line="37" column="5" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.59177214">
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -149,7 +148,7 @@
       <file leaf-file-name="settings.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/django_code/django_code/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="27" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+            <state line="7" column="31" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -215,10 +214,10 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/django_code/django_code/html_core.py" />
         <option value="$PROJECT_DIR$/django_code/django_code/begin.py" />
-        <option value="$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py" />
-        <option value="$PROJECT_DIR$/getData.js" />
         <option value="$PROJECT_DIR$/django_code/django_code/urls.py" />
+        <option value="$PROJECT_DIR$/getData.js" />
         <option value="$PROJECT_DIR$/django_code/django_code/settings.py" />
+        <option value="$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py" />
         <option value="$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py" />
       </list>
     </option>
@@ -685,13 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/getData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="43" selection-start="212" selection-end="212" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="26" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
@@ -708,16 +700,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/getData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="41" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="27" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+        <state line="7" column="31" selection-start="141" selection-end="141" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="23" selection-start="326" selection-end="326" vertical-scroll-proportion="0.0">
+        <state line="14" column="36" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>
@@ -726,7 +725,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="65" column="86" selection-start="2158" selection-end="2158" vertical-scroll-proportion="0.8027426">
+        <state line="37" column="5" selection-start="1072" selection-end="1072" vertical-scroll-proportion="0.59177214">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
