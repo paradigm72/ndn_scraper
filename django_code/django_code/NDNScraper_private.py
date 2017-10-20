@@ -1,4 +1,5 @@
 from bs4 import BeautifulSoup
+from bs4 import NavigableString, Comment
 import urllib2,urllib
 import re
 
@@ -22,12 +23,15 @@ def _getOnePostFullContents(local_href):
     i = 1
     postBodySanitized = "<br><span class=""postBody"">"  #start a new span to style the post contents
     # print postBody.strings.count
-    for string in postBody.find_all(text=True, recursive=False):
-        # print unicode(string)
-        if i==2:
-            if len(unicode(string)) > 0:
-                postBodySanitized += unicode(string)
-        i += 1
+    print "---------------"
+    for child in postBody.children:
+        print child
+        if isinstance(child, NavigableString) and not isinstance(child, Comment):
+        # print string
+        # if i==2:
+        # if len(unicode(string)) > 0:
+            postBodySanitized += child
+        # i += 1
         # print string['href']
     # print postBody.contents
     postBodySanitized += "</span>"

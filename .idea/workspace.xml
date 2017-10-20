@@ -6,14 +6,14 @@
     </list>
     <ignored path="HTMLScraper.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1507344202192" ignored="false" />
+    <file path="/Dummy.txt" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508467669983" ignored="false" />
     <file path="/begin.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1506224652371" ignored="false" />
     <file path="/html_core.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1506224095371" ignored="false" />
     <file path="/start_script.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1357700864228" ignored="false" />
     <file path="/style.css" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1504407969581" ignored="false" />
     <file path="/index.html" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1505788140439" ignored="false" />
     <file path="/urls.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508031652526" ignored="false" />
-    <file path="/NDNScraper_private.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508119940759" ignored="false" />
+    <file path="/NDNScraper_private.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508469245761" ignored="false" />
     <file path="/NDNScraper_interface.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508117790466" ignored="false" />
     <file path="/getData.js" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1507687059495" ignored="false" />
     <file path="/settings.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508117376481" ignored="false" />
@@ -34,6 +34,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -70,7 +71,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -102,9 +102,7 @@
         <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="14" column="36" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,9 +111,7 @@
         <entry file="file://$PROJECT_DIR$/django_code/django_code/urls.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="22" column="26" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#0#37#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,7 +119,7 @@
       <file leaf-file-name="NDNScraper_private.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="8" selection-start="808" selection-end="808" vertical-scroll-proportion="0.38181818">
+            <state line="25" column="26" selection-start="770" selection-end="770" vertical-scroll-proportion="0.36363637">
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -135,9 +131,7 @@
         <entry file="file://$PROJECT_DIR$/django_code/manage.py">
           <provider selected="true" editor-type-id="text-editor">
             <state line="10" column="76" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="e#22#31#0" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -223,7 +217,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="58" />
     <option name="y" value="23" />
-    <option name="width" value="1232" />
+    <option name="width" value="1000" />
     <option name="height" value="1119" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -252,6 +246,38 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane">
+        <subPane />
+      </pane>
+      <pane id="Scope">
+        <subPane subId="Problems" />
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="HTMLScraper">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="HTMLScraper">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="django_code">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -304,54 +330,22 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane">
-        <subPane />
-      </pane>
-      <pane id="Scope">
-        <subPane subId="Problems" />
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="HTMLScraper">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="HTMLScraper">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="django_code">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="425" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="427" />
     <property name="project.structure.proportion" value="0.0983284" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth1" value="427" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="425" />
-    <property name="recentsLimit" value="5" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder1" value="1" />
+    <property name="recentsLimit" value="5" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth0" value="425" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatOrder0" value="0" />
     <property name="last_opened_file_path" value="/usr/bin/python" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth2" value="430" />
-    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1225" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth3" value="1225" />
+    <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth3" value="1225" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth2" value="430" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_treeWidth1" value="427" />
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -537,14 +531,14 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="58" y="23" width="1232" height="1119" extended-state="0" />
+    <frame x="58" y="23" width="1000" height="1119" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4049196" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34822166" sideWeight="0.7857858" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25486183" sideWeight="0.7857858" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32421562" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3299923" sideWeight="0.49769586" order="7" side_tool="true" content_ui="tabs" />
@@ -626,6 +620,13 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="13" selection-start="637" selection-end="637" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/wsgi.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
@@ -661,9 +662,7 @@
     <entry file="file://$PROJECT_DIR$/django_code/manage.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="10" column="76" selection-start="254" selection-end="254" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#22#31#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -677,9 +676,7 @@
     <entry file="file://$PROJECT_DIR$/django_code/django_code/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="22" column="26" selection-start="801" selection-end="801" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -700,15 +697,6 @@
     <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_interface.py">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="36" selection-start="611" selection-end="611" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="e#0#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getData.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -720,9 +708,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/getData.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="41" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="808" selection-end="808" vertical-scroll-proportion="0.38181818">
+        <state line="25" column="26" selection-start="770" selection-end="770" vertical-scroll-proportion="0.36363637">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
