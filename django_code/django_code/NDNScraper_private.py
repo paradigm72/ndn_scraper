@@ -25,12 +25,16 @@ def _getOnePostFullContents(local_href):
     # print postBody.strings.count
     print "---------------"
     for child in postBody.children:
-        print child
-        if isinstance(child, NavigableString) and not isinstance(child, Comment):
+        print ("|%s" % (unicode(child)[:unicode(child).find('<hr')]))
+        # if isinstance(child, NavigableString) and not isinstance(child, Comment):
         # print string
         # if i==2:
         # if len(unicode(string)) > 0:
-            postBodySanitized += child
+        thisPost = unicode(child)[:unicode(child).find('<hr')]  #strip the child posts
+        thisPost = thisPost[3:]                             #strip out leading <br>
+        thisPost = thisPost.replace("<br> <br>","<br>")     #only single break for pars
+        thisPost = thisPost.replace("<br><br>","")          #no break at end
+        postBodySanitized += thisPost
         # i += 1
         # print string['href']
     # print postBody.contents
