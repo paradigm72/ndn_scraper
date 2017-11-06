@@ -13,7 +13,7 @@
     <file path="/style.css" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1504407969581" ignored="false" />
     <file path="/index.html" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1505788140439" ignored="false" />
     <file path="/urls.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508031652526" ignored="false" />
-    <file path="/NDNScraper_private.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1509939615075" ignored="false" />
+    <file path="/NDNScraper_private.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1509940674708" ignored="false" />
     <file path="/NDNScraper_interface.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508117790466" ignored="false" />
     <file path="/getData.js" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1507687059495" ignored="false" />
     <file path="/settings.py" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1508117376481" ignored="false" />
@@ -119,7 +119,7 @@
       <file leaf-file-name="NDNScraper_private.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="37" column="71" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.5090909">
+            <state line="40" column="42" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.56363636">
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -717,7 +717,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_code/django_code/NDNScraper_private.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="71" selection-start="1510" selection-end="1510" vertical-scroll-proportion="0.5090909">
+        <state line="40" column="42" selection-start="1644" selection-end="1644" vertical-scroll-proportion="0.56363636">
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>

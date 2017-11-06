@@ -34,6 +34,7 @@ def _getOnePostFullContents(local_href):
         thisPost = thisPost[3:]                             #strip out leading <br>
         thisPost = thisPost.replace("<br> <br>","<br>")     #only single break for pars
         thisPost = thisPost.replace("</br></br>","")        #wipe out extra breaks at the end
+        thisPost = thisPost.replace("</li> <br>","</li>")    #no extra break in lists
         thisPost = thisPost.replace("<br><br>","")          #no break at end
         postBodySanitized += thisPost
         # i += 1
