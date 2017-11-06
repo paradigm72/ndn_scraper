@@ -33,6 +33,7 @@ def _getOnePostFullContents(local_href):
         thisPost = unicode(child)[:unicode(child).find('<hr')]  #strip the child posts
         thisPost = thisPost[3:]                             #strip out leading <br>
         thisPost = thisPost.replace("<br> <br>","<br>")     #only single break for pars
+        thisPost = thisPost.replace("</br></br>","")        #wipe out extra breaks at the end
         thisPost = thisPost.replace("<br><br>","")          #no break at end
         postBodySanitized += thisPost
         # i += 1
