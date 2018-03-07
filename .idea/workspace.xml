@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="405d3849-922a-42fd-a9fa-840863524328" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
-    </list>
+    <list default="true" id="405d3849-922a-42fd-a9fa-840863524328" name="Default" comment="" />
     <ignored path="HTMLScraper.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="405d3849-922a-42fd-a9fa-840863524328" time="1517777325736" ignored="false" />
@@ -92,7 +90,7 @@
       <file leaf-file-name="style.css" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/style.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="15" column="51" selection-start="207" selection-end="207" vertical-scroll-proportion="0.26898733">
+            <state line="34" column="15" selection-start="461" selection-end="461" vertical-scroll-proportion="0.6097046">
               <folding />
             </state>
           </provider>
@@ -719,7 +717,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="51" selection-start="207" selection-end="207" vertical-scroll-proportion="0.26898733">
+        <state line="34" column="15" selection-start="461" selection-end="461" vertical-scroll-proportion="0.6097046">
           <folding />
         </state>
       </provider>
